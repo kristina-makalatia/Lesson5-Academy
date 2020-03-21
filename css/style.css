@@ -1,0 +1,51 @@
+/*Base classes*/
+.float-left{
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+/* End BAse classees*/
+
+.box::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.wraper::after {
+	content:"";
+	clear: both;
+	display: block;
+}
+.wraper p {
+	width: 700px;
+}
+.clear {
+	clear:both;
+}
+.wraper-test p {
+	display: inline-block;
+}
+/*.divider {
+	display: inline-block;
+	width:2px;
+	height: 25px;
+	background-color: blue;
+	margin:0 15px;
+}*/
+.test1::before {
+	content: "Academy";
+	display: inline-block;
+	color: red;
+}
+.test1::after {
+	content:"";
+	width:2px;
+	height: 25px;
+	background-color: blue;
+	display: inline-block;
+}
